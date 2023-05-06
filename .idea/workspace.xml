@@ -4,10 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96dbc77c-a742-43e1-a6e5-70af679c8242" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/estimation-poker/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/estimation-poker/src/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" />
+    <list default="true" id="96dbc77c-a742-43e1-a6e5-70af679c8242" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/estimation-poker/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/src/api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/src/reportWebVitals.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimation-poker/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,11 +75,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683364655262</updated>
-      <workItem from="1683364657269" duration="1921000" />
+      <workItem from="1683364657269" duration="2187000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1683366683261</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683366683263</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>
