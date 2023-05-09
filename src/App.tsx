@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import Users from "./components/users/Users";
+import JoinButton from "./components/users/JoinButton";
 
 function App() {
 
@@ -7,7 +8,8 @@ function App() {
         <div>
             <p>test</p>
 
-            <Users></Users>
+            <Users/>
+            <JoinButton/>
         </div>
     );
 }

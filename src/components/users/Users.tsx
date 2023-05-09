@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import api from "../../api/api";
+import io from 'socket.io-client';
 
 interface User {
     id: number;
@@ -9,15 +10,18 @@ interface User {
 }
 
 const Users = () => {
+
     const [users, setUsers] = useState<User[]>([]);
+    const socket = io('http://localhost:5000'); // replace with your server URL
 
     useEffect(() => {
-        api.getUsers()
-            .then((response) => {
-                console.log(response.data.userList)
-                setUsers(response.data.userList);
-            })
-            .catch((error) => console.log(error));
+
+        // Listen for 'userListUpdate' event from server and update userList state
+        socket.on('userListUpdate', ( {userList}) => {
+            setUsers(userList);
+            console.log(userList);
+            console.log("Users updated");
+        });
     }, []);
 
     return (
@@ -27,7 +31,7 @@ const Users = () => {
                 {users.map(user => (
                     <li key={user.id}>
                         <p>Name: {user.name}</p>
-                        <p>Email: {user.email}</p>
+                        <p>Id: {user.id}</p>
                     </li>
                 ))}
             </ul>
