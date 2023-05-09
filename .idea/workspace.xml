@@ -5,29 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96dbc77c-a742-43e1-a6e5-70af679c8242" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/estimation-poker/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/src/api.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/src/reportWebVitals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/src/setupTests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimation-poker/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/Users.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/user/User.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/UserStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +42,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\Igor\\WebstormProjects\\estimation-poker\\estimation-poker\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\Igor\\WebstormProjects\\estimation-poker\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -67,6 +54,13 @@
       </map>
     </option>
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Igor\WebstormProjects\estimation-poker\src\api" />
+      <recent name="C:\Users\Igor\WebstormProjects\estimation-poker\src" />
+      <recent name="C:\Users\Igor\WebstormProjects\estimation-poker\server" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,6 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683364655262</updated>
       <workItem from="1683364657269" duration="2187000" />
+      <workItem from="1683366918395" duration="5868000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1683366683261</created>
@@ -84,7 +79,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683366683263</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <created>1683367151546</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683367151546</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init">
+      <created>1683367169627</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683367169627</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
