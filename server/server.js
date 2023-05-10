@@ -12,44 +12,48 @@ const io = require('socket.io')(server, {
         origin: '*',
         methods: ['GET', 'POST'],
     },
+    autoConnect: false,
 });
+// const socket = io.listen(server);
 
 app.use(cors());
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
 
-let interval;
+// let interval;
 
 let userList = [
     {
         name: "Igor",
         id: 0,
+        connected: true,
     },
     {
         name: "Kristaps",
         id: 1,
+        connected: false,
     },
 ];
 
 io.on('connection', (socket) => {
-    console.log('a user connected');
+    console.log('a user connected:', socket.id);
+    // userList.push({name: 'connecting...', id: socket.id});
+    socket.emit('socketId', {socketId: socket.id});
+    socket.emit('userListUpdate', {userList});
 
-    if (interval) {
-        clearInterval(interval);
-    }
-    interval = setInterval(() => {
-        socket.emit('userListUpdate', {userList});
-    }, 1000);
-    // Send initial userlist to connected client
-
+    // socket.on('')
 
     socket.on('disconnect', () => {
         console.log('Client disconnected:', socket.id);
-        clearInterval(interval);
+        // clearInterval(interval);
+
+        //Disconnect user
+        let userIndex = userList.findIndex(user => user.id === socket.id);
+        //console.log(userIndex);
+        if (userIndex != -1) userList[userIndex].connected = false;
     });
 });
-
 
 
 // Routes
@@ -60,15 +64,20 @@ io.on('connection', (socket) => {
 
 app.post('/api/users', (req, res) => {
     // handle the POST request
+    // socket.on('data', function (data) {
     const user = {
         name: req.body.userName,
-        id: userList.length
+        id: req.body.userId,
+        connected: true,
     }
     userList.push(user);
     // send updated userlist to all connected clients
-    io.emit('userListUpdate', { userList });
+
+
     // return a response
     res.status(201).json({message: 'Item created successfully.'});
+    io.emit('userListUpdate', {userList});
+    // });
 });
 
 

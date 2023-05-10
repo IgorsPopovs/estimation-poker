@@ -1,40 +1,43 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
-import api from "../../api/api";
-import io from 'socket.io-client';
+import React, {useState, useEffect} from "react";
+import {socket} from "../../constants/constants";
+import JoinButton from "./JoinButton";
+import {UserProps} from "../../stores/UserStore";
 
-interface User {
-    id: number;
-    name: string;
-    email: string;
-}
 
 const Users = () => {
 
-    const [users, setUsers] = useState<User[]>([]);
-    const socket = io('http://localhost:5000'); // replace with your server URL
+    const [users, setUsers] = useState<UserProps[]>([]);
 
     useEffect(() => {
-
         // Listen for 'userListUpdate' event from server and update userList state
-        socket.on('userListUpdate', ( {userList}) => {
+        socket.on('userListUpdate', ({userList}) => {
             setUsers(userList);
             console.log(userList);
             console.log("Users updated");
         });
     }, []);
 
+
+    const isJoinDisabled = () => {
+        return false;
+    }
+
     return (
         <div>
             <h1>Users</h1>
             <ul>
-                {users.map(user => (
+                {users.filter(user => user.connected).map(user => (
                     <li key={user.id}>
                         <p>Name: {user.name}</p>
                         <p>Id: {user.id}</p>
+                        <p>connected: {user.connected ? 'yes' : 'no'}</p>
                     </li>
                 ))}
             </ul>
+            {isJoinDisabled() ? '' :
+                <JoinButton/>
+            }
+
         </div>
     );
 };
