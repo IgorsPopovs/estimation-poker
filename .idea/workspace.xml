@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96dbc77c-a742-43e1-a6e5-70af679c8242" name="Changes" comment="Add client build">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="96dbc77c-a742-43e1-a6e5-70af679c8242" name="Changes" comment="heroku url">
       <change beforePath="$PROJECT_DIR$/src/constants/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/constants.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683364655262</updated>
       <workItem from="1683364657269" duration="2187000" />
-      <workItem from="1683366918395" duration="20796000" />
+      <workItem from="1683366918395" duration="21001000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1683366683261</created>
@@ -134,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683720733612</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="heroku url">
+      <created>1683720895756</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683720895756</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +154,7 @@
     <MESSAGE value="constants" />
     <MESSAGE value="first deployment to heroku" />
     <MESSAGE value="Add client build" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add client build" />
+    <MESSAGE value="heroku url" />
+    <option name="LAST_COMMIT_MESSAGE" value="heroku url" />
   </component>
 </project>
