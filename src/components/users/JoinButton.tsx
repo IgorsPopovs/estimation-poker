@@ -1,7 +1,6 @@
 import {useContext, useEffect, useState} from "react";
 import api from "../../api/api";
 import {socket} from "../../constants/constants";
-import rootStore from "../../stores/RootStore";
 import {RootStoreContext} from "../../App";
 
 const JoinButton: React.FC = () => {
@@ -26,7 +25,6 @@ const JoinButton: React.FC = () => {
             })
             .catch((error) => console.log(error));
     };
-
 
 
     return (

@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96dbc77c-a742-43e1-a6e5-70af679c8242" name="Changes" comment="socket.io">
-      <change afterPath="$PROJECT_DIR$/src/constants/constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stores/RootStore.ts" afterDir="false" />
+    <list default="true" id="96dbc77c-a742-43e1-a6e5-70af679c8242" name="Changes" comment="connection rework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/users/JoinButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/JoinButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/Users.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/UserStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/UserStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/RootStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/RootStore.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683364655262</updated>
       <workItem from="1683364657269" duration="2187000" />
-      <workItem from="1683366918395" duration="16439000" />
+      <workItem from="1683366918395" duration="16800000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1683366683261</created>
@@ -106,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683667720491</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="connection rework">
+      <created>1683709214349</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683709214349</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +119,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="api" />
     <MESSAGE value="socket.io" />
-    <option name="LAST_COMMIT_MESSAGE" value="socket.io" />
+    <MESSAGE value="connection rework" />
+    <option name="LAST_COMMIT_MESSAGE" value="connection rework" />
   </component>
 </project>
